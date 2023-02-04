@@ -2,14 +2,14 @@ import http from 'http';
 import supertest from 'supertest';
 import { HttpBody } from '../src';
 
-it('parse - string', async () => {
+it('parse - buffer', async () => {
   const DATA: string = 'Hello World';
 
-  let body: any;
+  let body: Buffer;
 
   const httpServer: http.Server = http.createServer((request, response) => {
     HttpBody
-      .parse(request, 'string')
+      .parse(request, 'buffer')
       .then(result => {
         body = result;
 
@@ -24,5 +24,5 @@ it('parse - string', async () => {
     .post('/')
     .send(DATA);
 
-  expect(body).toEqual(DATA);
+  expect(body.toString()).toEqual(DATA);
 });
