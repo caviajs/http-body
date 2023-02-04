@@ -23,10 +23,10 @@ import { HttpBody } from '@caviajs/http-body';
 router
   .route({
     handler: async (request, response, next) => {
-      // const body = await HttpQuery.parse(request, 'stream');
-      // const body = await HttpQuery.parse(request, 'buffer');
-      // const body = await HttpQuery.parse(request, 'json');
-      // const body = await HttpQuery.parse(request, 'string');
+      // const body = await HttpBody.parse(request, 'stream');
+      // const body = await HttpBody.parse(request, 'buffer');
+      // const body = await HttpBody.parse(request, 'json');
+      // const body = await HttpBody.parse(request, 'string');
     },
   });
 ```
