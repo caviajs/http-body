@@ -28,5 +28,7 @@ router
       // const body = await HttpBody.parse(request, 'json');
       // const body = await HttpBody.parse(request, 'string');
     },
+    method: 'POST',
+    path: '/',
   });
 ```
