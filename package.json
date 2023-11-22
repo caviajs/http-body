@@ -1,7 +1,7 @@
 {
   "name": "@caviajs/http-body",
   "description": "a micro framework for node.js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Paweł Partyka",
   "license": "MIT",
   "repository": "caviajs/http-body",
